@@ -72,7 +72,7 @@ namespace Hellsing.Kalista
                     if (PercentEnabled)
                     {
                         // Get damage in percent and draw next to the health bar
-                        Drawing.DrawText(unit.HPBarPosition, Color.MediumVioletRed, string.Concat(Math.Ceiling((damage / unit.TotalShieldHealth()) * 100), "%"), 10);
+                        Drawing.DrawText(unit.HPBarPosition, Color.Black, string.Concat(Math.Ceiling((damage / unit.TotalShieldHealth()) * 100), "%"), 10);
                     }
                 }
             }
