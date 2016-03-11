@@ -62,8 +62,8 @@ namespace Hellsing.Kalista
                         var currentHealthPercentage = unit.TotalShieldHealth() / (unit.MaxHealth + unit.AllShield + unit.AttackShield + unit.MagicShield);
 
                         // Calculate start and end point of the bar indicator
-                        var startPoint = new Vector2((int) (unit.HPBarPosition.X + BarOffset.X + damagePercentage * BarWidth), (int) (unit.HPBarPosition.Y + BarOffset.Y) - 5);
-                        var endPoint = new Vector2((int) (unit.HPBarPosition.X + BarOffset.X + currentHealthPercentage * BarWidth) + 1, (int) (unit.HPBarPosition.Y + BarOffset.Y) - 5);
+                        var startPoint = new Vector2((int) (unit.HPBarPosition.X + BarOffset.X + damagePercentage * BarWidth), (int) (unit.HPBarPosition.Y + BarOffset.Y) - 25);
+                        var endPoint = new Vector2((int) (unit.HPBarPosition.X + BarOffset.X + currentHealthPercentage * BarWidth) + 1, (int) (unit.HPBarPosition.Y + BarOffset.Y) - 25);
 
                         // Draw the line
                         Drawing.DrawLine(startPoint, endPoint, LineThickness, DrawingColor);
